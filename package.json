@@ -1,4 +1,5 @@
 {
+  "homepage": "https://YatinCyber.github.io/Tic-Tac-Toess",
   "name": "tic-tac-toe",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint './src/**/*.{js,jsx}'",
-    "lint:fix": "eslint './src/**/*.{js,jsx}' --fix"
+    "lint:fix": "eslint './src/**/*.{js,jsx}' --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "framer-motion": "^10.12.2",
@@ -22,6 +25,7 @@
     "@vitejs/plugin-react": "^3.1.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.7",
     "sass": "^1.62.0",
     "vite": "^4.2.0"
